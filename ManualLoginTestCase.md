@@ -11,7 +11,6 @@
 1. Launch a browser and go to [Login Page](https://practicetestautomation.com/practice-test-login/)
 2. Enter username: `student`
 3. Enter password: `Password123`
-4. 
 4. Click the **Submit** button
 
 ---

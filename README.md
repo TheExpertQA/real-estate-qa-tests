@@ -7,7 +7,10 @@ This project showcases manual and automated testing for a real-world website.
 ## 🔍 Project: Login Functionality – [Practice Test Automation](https://practicetestautomation.com/practice-test-login/)
 
 ### ✅ Manual Testing
-- Documented test case in [ManualLoginTestCase.md](ManualLoginTestCase.md)
+- Documented test case in
+- [ManualLoginTestCase.md](ManualLoginTestCase.md)
+- [ManualInvalidLoginTestCase.md](ManualInvalidLoginTestCase.md)
+
 
 ### 🤖 Automation Testing
 - Java + Selenium + TestNG
@@ -15,6 +18,11 @@ This project showcases manual and automated testing for a real-world website.
 - `LoginTest.java` validates successful login using:
     - Username: `student`
     - Password: `Password123`
+- - `LoginTest.java`: Valid login
+- 
+- `InvalidLoginTest.java`: validates Login error if using wrong credentials
+- Username: 'wrongUser'
+- Password: 'wrongPass'
 
 ---
 

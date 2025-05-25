@@ -11,7 +11,6 @@
 1. Navigate to the Login Page 
 2. Enter invalid username and password
 3. Click the **Submit**  button
-
 -- 
 
 ## Expected Result:

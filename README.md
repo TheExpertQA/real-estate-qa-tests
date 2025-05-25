@@ -1,103 +1,98 @@
-# Real Estate QA Tests
+# QA Testing Project – practiceautomationtesting.com
 
-## Overview
-
-This repository contains a comprehensive set of manual, automated, and API test cases targeting the [practiceautomation.com](https://practiceautomation.com) website. The purpose is to validate key functionalities such as user registration, login, property search, and other core features of this real estate practice site.
-
-These tests demonstrate effective QA automation and API testing techniques using industry-standard tools like Selenium WebDriver, TestNG, and Postman. This project serves both as a learning resource and a portfolio to showcase practical testing skills on a real-world practice application.
+This repository showcases manual, API, and automated UI testing for the demo website [practiceautomationtesting.com](https://practiceautomationtesting.com). It demonstrates practical QA skills using tools like Java, Selenium, TestNG, and Postman.
 
 ---
 
-## Tools & Technologies Used
+## 🔍 Project Overview
 
-- **Java** – Programming language for automation scripts
-- **Selenium WebDriver** – Browser automation
-- **TestNG** – Test framework for organizing and running tests
-- **Postman** – API testing
-- **Maven** – Build and dependency management
-- **GitHub** – Version control and repository hosting
+This project simulates real-world testing for a login feature on the demo site. It includes:
+
+- ✅ Manual test case documentation
+- ✅ API testing using Postman
+- ✅ UI automation using Java + Selenium + TestNG
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-/real-estate-qa-tests
+real-estate-qa-tests/
 │
-├── /automation-scripts # Selenium WebDriver Java automation tests
-├── /manual-test-cases # Manual test cases documented in Markdown or Excel
-├── /postman-api-tests # Postman collections and environment files
-├── /test-data # Test data files (CSV, JSON)
-├── README.md # Project overview and instructions
-└── LICENSE # License information
+├── automation-testing/ # Selenium TestNG framework with login automation
+│ ├── pages/ # Page Object Model classes
+│ ├── tests/ # Test classes
+│ └── utils/ # Utility/helper classes
+│
+├── manual-testing/ # Manual test cases
+│ └── ManualLoginTestCase.md
+│
+├── postman-api-tests/ # Postman collections and tests
+│ ├── LoginTest.postman_collection.json
+│ └── CreateUserTest.postman_collection.json
+│
+└── README.md # Project documentation
+
 
 
 ---
 
-## Getting Started
+## 🧪 Manual Testing
 
-### Prerequisites
+Manual test cases are stored in the `manual-testing/` folder.
 
-- Java JDK 8 or higher
-- Maven installed and configured in PATH
-- An IDE (e.g., IntelliJ IDEA, Eclipse) for running automation scripts
-- Postman desktop app for API testing
+👉 [ManualLoginTestCase.md](manual-testing/ManualLoginTestCase.md) – A step-by-step login test case for testers to execute manually.
 
-### Setup
+---
+
+## 🤖 Automation Testing
+
+### 🔧 Tools Used
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- IntelliJ IDEA
+
+### 🚀 How to Run
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/TheExpertQA/real-estate-qa-tests.git
-   cd real-estate-qa-tests
-Import the project in your IDE.
+Navigate to automation-testing/ and open in IntelliJ.
 
-Install Maven dependencies:
+Install dependencies via Maven.
+
+Run the test from LoginTest.java or InvalidLoginTest.java.
+
+🔌 API Testing
+🌐 Tools Used
+Postman
+
+REST APIs from reqres.in
+
+✅ Sample Tests
+Create user (POST)
+
+Login (POST)
+
+Validate status codes and tokens
+
+🔍 How to Run
+Import the Postman collections from postman-api-tests/ into Postman.
+
+Use the Runner to run tests and assertions.
+
+📸 Enhancements in Progress
+Add ExtentReports for UI test results
+
+Screenshot capture on test failure
+
+Data-driven login testing
+
+GitHub Actions for CI (coming soon)
+
+👤 Author
+Ruchi – QA Automation Tester
+📧 For demo/recruitment purposes only
 
 
-Copy
-Edit
-mvn clean install
-Open Postman and import the collections from /postman-api-tests folder.
-
-Running Tests
-Automation Tests
-Run all TestNG tests using Maven command:
-
-
-Copy
-Edit
-mvn test
-Or run specific test classes in your IDE.
-
-Manual Test Cases
-Manual test cases are documented under /manual-test-cases. Review these before executing tests manually.
-
-API Tests
-Import the Postman collections and run the requests. Use environments for different setups.
-
-Test Case Example
-Test Case ID	Description	Preconditions	Steps	Expected Result	Status
-TC001	Verify user login functionality	User registered	1. Open login page 2. Enter valid credentials 3. Click login	User is logged in successfully	Pass/Fail
-
-Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repo
-
-Create a new branch (git checkout -b feature-branch)
-
-Commit your changes (git commit -m 'Add new test case')
-
-Push to the branch (git push origin feature-branch)
-
-Create a Pull Request
-
-License
-This project is licensed under the Apache License - see the LICENSE file for details.
-
-Disclaimer
-This repository is for learning and demonstration purposes only. Tests are conducted on publicly available websites and are intended to showcase QA testing skills.
-
-Contact
-For questions or feedback, please reach out:
-
-GitHub: TheExpertQA

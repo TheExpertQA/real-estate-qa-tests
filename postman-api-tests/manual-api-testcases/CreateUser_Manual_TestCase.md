@@ -7,3 +7,9 @@
   "name": "morpheus",
   "job": "leader"
 }
+
+Expected Response:
+
+Status code: 201
+
+Response should contain fields: id, createdAt

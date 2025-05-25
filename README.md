@@ -1,57 +1,70 @@
-# Real Website Automation Testing – Portfolio Project
+# 🏡 Practice Website QA Testing Project
 
-This project showcases manual and automated testing for a real-world website.
+This project contains **manual, automation, and API tests** designed for a real-world real estate platform. The testing showcases my QA skills using industry-standard tools such as **Java**, **Selenium**, **TestNG**, **Postman**, and **Git**.
 
----
-
-## 🔍 Project: Login Functionality – [Practice Test Automation](https://practicetestautomation.com/practice-test-login/)
-
-### ✅ Manual Testing
-- Documented test case in
-- [ManualLoginTestCase.md](ManualLoginTestCase.md)
-- [ManualInvalidLoginTestCase.md](ManualInvalidLoginTestCase.md)
-
-
-### 🤖 Automation Testing
-- Java + Selenium + TestNG
-- Maven-based project structure
-- `LoginTest.java` validates successful login using:
-    - Username: `student`
-    - Password: `Password123`
-- - `LoginTest.java`: Valid login
-- 
-- `InvalidLoginTest.java`: validates Login error if using wrong credentials
-- Username: 'wrongUser'
-- Password: 'wrongPass'
+> ⚠️ Note: This is a personal portfolio project based on publicly available websites such as [https://practicetestautomation.com](https://practicetestautomation.com) and similar real estate platforms. These tests do not involve any internal or proprietary code.
 
 ---
 
-## 🧰 Tech Stack
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- IntelliJ IDEA
-- Git & GitHub
+## 📌 Objective
+
+To demonstrate structured and maintainable QA work using:
+- 🧪 Automation testing (Selenium + Java + TestNG)
+- 📄 Manual test case writing
+- 🔌 Basic API testing (coming soon)
+- ✅ GitHub for version control & portfolio presentation
 
 ---
 
-## 📁 Folder Structure
+## 🧪 Automation Test Cases
 
-com.ruchi.qa/
+| Test Case Name | Description |
+|----------------|-------------|
+| [`LoginTest.java`](automation-testing/LoginTest.java) | Verifies successful login with valid credentials |
+| [`InvalidLoginTest.java`](automation-testing/InvalidLoginTest.java) | Verifies error message when logging in with invalid credentials |
+
+> **Tech Stack:** Java, Selenium WebDriver, TestNG, Maven
+
+---
+
+## 📝 Manual Test Cases
+
+| Test Case Name | Description |
+|----------------|-------------|
+| [`ManualLoginTestCase.md`](manual-testing/ManualLoginTestCase.md) | Step-by-step manual login test |
+| [`ManualInvalidLoginTestCase.md`](manual-testing/ManualInvalidLoginTestCase.md) | Manual test for login failure with incorrect credentials |
+
+> **Format:** Markdown documents written with clear steps, test data, expected results, and IDs for traceability.
+
+---
+
+## 🔌 API Testing (Coming Soon)
+
+API tests will be added using Postman for endpoints (where accessible) such as:
+- `GET /listings`
+- `POST /login`
+- `DELETE /property/{id}`
+
+> These will include collections + environment files with test data, validation scripts, and documentation.
+
+---
+📁 Project Structure
+real-estate-qa-tests/
 │
-├── src
-│ └── test
-│ └── java
-│ └── tests
-│ └── LoginTest.java
-├── ManualLoginTestCase.md
-├── README.md
-└── pom.xml
+├── automation-testing/         ← Readable .java copies for GitHub
+│   └── LoginTest.java
+│   └── InvalidLoginTest.java
+│
+├── manual-testing/             ← Manual test cases in markdown
+│   └── ManualLoginTestCase.md
+│   └── ManualInvalidLoginTestCase.md
+│
+├── src/test/java/tests/        ← IntelliJ runnable tests
+│   └── LoginTest.java
+│   └── InvalidLoginTest.java
+│
+├── pom.xml                     ← Maven dependencies
+└── README.md                   ← This file
 
 
----
-
-## 📌 Notes
-- This is a **real website** used for automation testing practice
-- Manual and automated tests demonstrate a full test cycle
+⭐ This repository is designed to showcase QA skills only. No commercial or confidential data is included.

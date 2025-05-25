@@ -1,17 +1,49 @@
-# Real Estate Rental Website – QA Portfolio Project
+# Real Website Automation Testing – Portfolio Project
 
-This repository showcases my QA work on a real estate rental web platform. It includes sample manual test cases, Selenium automation scripts, API test collections, and bug reports. The goal is to demonstrate my practical skills in manual testing, automation using Java + Selenium, and API testing using Postman.
+This project showcases manual and automated testing for a real-world website.
 
-## 🧪 Tools & Technologies Used
-- Java + Selenium WebDriver
+---
+
+## 🔍 Project: Login Functionality – [Practice Test Automation](https://practicetestautomation.com/practice-test-login/)
+
+### ✅ Manual Testing
+- Documented test case in [ManualLoginTestCase.md](ManualLoginTestCase.md)
+
+### 🤖 Automation Testing
+- Java + Selenium + TestNG
+- Maven-based project structure
+- `LoginTest.java` validates successful login using:
+    - Username: `student`
+    - Password: `Password123`
+
+---
+
+## 🧰 Tech Stack
+- Java
+- Selenium WebDriver
 - TestNG
 - Maven
-- Postman
-- Jira (sample bug reports)
-- Chrome DevTools
+- IntelliJ IDEA
+- Git & GitHub
 
-## 📁 Folder Structure (Coming Soon)
-- `/automation-scripts` – Selenium + TestNG automation code
-- `/manual-test-cases` – Test case files (Excel or Markdown)
-- `/postman-api-tests` – API collections and docs
-- `/bug-reports` – Sample bug logs
+---
+
+## 📁 Folder Structure
+
+com.ruchi.qa/
+│
+├── src
+│ └── test
+│ └── java
+│ └── tests
+│ └── LoginTest.java
+├── ManualLoginTestCase.md
+├── README.md
+└── pom.xml
+
+
+---
+
+## 📌 Notes
+- This is a **real website** used for automation testing practice
+- Manual and automated tests demonstrate a full test cycle
